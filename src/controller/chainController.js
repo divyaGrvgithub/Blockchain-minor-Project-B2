@@ -6,9 +6,7 @@ const getBlockChain = async (req, res) => {
         let option = {
             method: "get",
             url: "https://docs.coincap.io/v2/assets",
-            headers: {
-                Authorization: "Bearer  5a3c9f61-7b40-4b2c-812c-e3dd9828c119",
-            }
+
         };
         let result = await axios(option);
         console.log(result);
