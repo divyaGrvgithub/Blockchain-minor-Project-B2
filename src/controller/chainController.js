@@ -13,7 +13,7 @@ const getBlockChain = async function (req, res) {
 
         let data = await axios(option);
         let coinData = data.data;
-        let checkCoinData = await coinModel.find();
+        let checkCoinData = await chainModel.find();
 
         if (checkCoinData.length == 0) {
 
